@@ -9,7 +9,9 @@ export default defineConfig({
             refresh: true,
         }),
         react({
-            jsxRuntime: 'classic'  // Esta línea puede resolver el problema
+            babel: {
+                babelrc: true,
+            },
         }),
     ],
 });
