@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar.jsx';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
+import Profile from './pages/Profile';
 import './app.css';
 
 const Layout = ({ children }) => {
@@ -23,6 +24,7 @@ const App = () => {
             <Routes>
                 <Route path="/" element={<Layout><Home /></Layout>} />
                 <Route path="/contact" element={<Layout><Contact /></Layout>} />
+                <Route path="/profile" element={<Layout><Profile /></Layout>} />
             </Routes>
         </BrowserRouter>
     );

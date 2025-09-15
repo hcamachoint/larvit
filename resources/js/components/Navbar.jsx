@@ -25,6 +25,14 @@ const Navbar = () => {
                             Contacto
                         </Link>
                     </li>
+                    <li>
+                        <Link 
+                            to="/profile" 
+                            className={location.pathname === '/profile' ? 'active' : ''}
+                        >
+                            Perfil
+                        </Link>
+                    </li>
                 </ul>
             </div>
         </nav>
